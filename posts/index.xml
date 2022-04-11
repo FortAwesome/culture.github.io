@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Terminal</title>
+    <link>https://culture.github.io/posts/</link>
+    <description>Recent content in Posts on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Apr 2022 21:38:47 -0500</lastBuildDate><atom:link href="https://culture.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I_can_has_doc</title>
+      <link>https://culture.github.io/posts/i_can_has_doc/</link>
+      <pubDate>Sat, 09 Apr 2022 21:38:47 -0500</pubDate>
+      
+      <guid>https://culture.github.io/posts/i_can_has_doc/</guid>
+      <description>I CAN HAS DOC? Based on discussions at the last snuggle, we discussed the need for additional documentation. I suggested using the GitHub Pages features as a way that we might improve our documenation and gain some cool features. To quote Mike I thought we could &amp;ldquo;feed two birds with one scone&amp;rdquo; and also document some of our company culture here instead of having to search for interesting culture discussions that happened in slack.</description>
+      <content>&lt;h1 id=&#34;i-can-has-doc&#34;&gt;I CAN HAS DOC?&lt;/h1&gt;
+&lt;p&gt;Based on discussions at the last snuggle, we discussed the need for additional documentation.  I suggested using the GitHub Pages features as a way that we might improve our documenation and gain some cool features.  To quote Mike I thought we could &amp;ldquo;feed two birds with one scone&amp;rdquo; and also document some of our company culture here instead of having to search for interesting culture discussions that happened in slack. To that end, here is a simple example of the GitHub Pages in use.&lt;/p&gt;
+&lt;h2 id=&#34;basic-setup-of-the-site&#34;&gt;Basic Setup of the Site&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a place to store the content, in this case, it is in the culture-awesome repo.&lt;/li&gt;
+&lt;li&gt;Create a place to host the page, in this case, culture.github.io.&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;Hugo&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Pull down the culture-awesome repo and create a new site.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site culture-blog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Find a dope ass &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;theme&lt;/a&gt; (in this case we decided on &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/&#34;&gt;terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Clone the theme into the themes folder created when we created a new site
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Update the config.toml file (I used the recommended settings &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure&#34;&gt;here&lt;/a&gt; with a couple minor tweaks&lt;/li&gt;
+&lt;li&gt;Create a simple post (the one your currently reading) with&amp;hellip;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new posts/i_can_has_doc.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Write a bunch of stuff in markdown.&lt;/li&gt;
+&lt;li&gt;Validate everything is working.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Check it out by navigating to http://localhost:1313&lt;/li&gt;
+&lt;li&gt;With the initial site setup we need to configure hosting&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;basic-setup-for-hosting&#34;&gt;Basic Setup for Hosting&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Pull down the culture.github.io repo&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ll make culture-blog a sub-module so we need a main branch and an initial commit (if you want to setup another one of these for yourself one day, otherwise, keep readin&#39;)&lt;/li&gt;
+&lt;li&gt;Use the following command in the culture-blog folder of the culture-awesome repo. This will automatically add our statically generated pages to the GitHub Pages when you run the hugo build commands (again, already complete so just documenting for posterity)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git submodule add -b main git@github.com:FortAwesome/culture.github.io.git public
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Generate the static files using the name of your theme, in this case terminal
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo -t terminal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Hugo should report that several files and at least one sitemap were created.  They should be visible in the /public directory.  Additionally if you navigate to the directory and run the following command you should see that the public origin is pointed to our GitHub Page and not the culture-awesome repo
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote -v
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

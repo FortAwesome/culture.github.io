@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>I_can_has_doc :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A General Overview of the GitHub Page Features with Hugo" />
+<meta name="keywords" content="culture, docs" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://culture.github.io/posts/i_can_has_doc/" />
+
+
+
+
+<link rel="stylesheet" href="https://culture.github.io/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://culture.github.io/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://culture.github.io/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="MightyPearMan" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="I_can_has_doc">
+<meta property="og:description" content="A General Overview of the GitHub Page Features with Hugo" />
+<meta property="og:url" content="https://culture.github.io/posts/i_can_has_doc/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="https://culture.github.io/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2022-04-09 21:38:47 -0500 CDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/showcase">Showcase</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://culture.github.io/posts/i_can_has_doc/">I_can_has_doc</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2022-04-09
+        
+      </span>
+    
+    
+      <span class="post-author">:: Alex &#39;The Yellow Dart&#39; Poiry</span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://culture.github.io/tags/general/">general</a>&nbsp;
+    
+    #<a href="https://culture.github.io/tags/how-to/">how-to</a>&nbsp;
+    
+  </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="i-can-has-doc">I CAN HAS DOC?<a href="#i-can-has-doc" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Based on discussions at the last snuggle, we discussed the need for additional documentation.  I suggested using the GitHub Pages features as a way that we might improve our documenation and gain some cool features.  To quote Mike I thought we could &ldquo;feed two birds with one scone&rdquo; and also document some of our company culture here instead of having to search for interesting culture discussions that happened in slack. To that end, here is a simple example of the GitHub Pages in use.</p>
+<h2 id="basic-setup-of-the-site">Basic Setup of the Site<a href="#basic-setup-of-the-site" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ol>
+<li>Create a place to store the content, in this case, it is in the culture-awesome repo.</li>
+<li>Create a place to host the page, in this case, culture.github.io.</li>
+<li>Install <a href="https://gohugo.io/getting-started/quick-start/">Hugo</a>.</li>
+<li>Pull down the culture-awesome repo and create a new site.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site culture-blog
+</span></span></code></pre></div></li>
+<li>Find a dope ass <a href="https://themes.gohugo.io/">theme</a> (in this case we decided on <a href="https://themes.gohugo.io/themes/hugo-theme-terminal/">terminal</a></li>
+<li>Clone the theme into the themes folder created when we created a new site
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal
+</span></span></code></pre></div></li>
+<li>Update the config.toml file (I used the recommended settings <a href="https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure">here</a> with a couple minor tweaks</li>
+<li>Create a simple post (the one your currently reading) with&hellip;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new posts/i_can_has_doc.md
+</span></span></code></pre></div></li>
+<li>Write a bunch of stuff in markdown.</li>
+<li>Validate everything is working.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div></li>
+<li>Check it out by navigating to http://localhost:1313</li>
+<li>With the initial site setup we need to configure hosting</li>
+</ol>
+<h2 id="basic-setup-for-hosting">Basic Setup for Hosting<a href="#basic-setup-for-hosting" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ol>
+<li>Pull down the culture.github.io repo</li>
+<li>We&rsquo;ll make culture-blog a sub-module so we need a main branch and an initial commit (if you want to setup another one of these for yourself one day, otherwise, keep readin')</li>
+<li>Use the following command in the culture-blog folder of the culture-awesome repo. This will automatically add our statically generated pages to the GitHub Pages when you run the hugo build commands (again, already complete so just documenting for posterity)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add -b main git@github.com:FortAwesome/culture.github.io.git public
+</span></span></code></pre></div></li>
+<li>Generate the static files using the name of your theme, in this case terminal
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo -t terminal
+</span></span></code></pre></div></li>
+<li>Hugo should report that several files and at least one sitemap were created.  They should be visible in the /public directory.  Additionally if you navigate to the directory and run the following command you should see that the public origin is pointed to our GitHub Page and not the culture-awesome repo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v
+</span></span></code></pre></div></li>
+</ol>
+
+      </div></div>
+
+  
+  
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://culture.github.io/assets/main.js"></script>
+<script src="https://culture.github.io/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

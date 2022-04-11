@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Terminal</title>
+    <link>https://culture.github.io/tags/</link>
+    <description>Recent content in Tags on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Apr 2022 21:38:47 -0500</lastBuildDate><atom:link href="https://culture.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>general</title>
+      <link>https://culture.github.io/tags/general/</link>
+      <pubDate>Sat, 09 Apr 2022 21:38:47 -0500</pubDate>
+      
+      <guid>https://culture.github.io/tags/general/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>how-to</title>
+      <link>https://culture.github.io/tags/how-to/</link>
+      <pubDate>Sat, 09 Apr 2022 21:38:47 -0500</pubDate>
+      
+      <guid>https://culture.github.io/tags/how-to/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>
